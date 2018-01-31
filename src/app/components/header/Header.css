@@ -34,8 +34,7 @@ HEADER
   background: transparent;
   height: 100px; }
   .header .content .logo {
-    width: 70px;
-    margin-left: 15px; }
+    width: 70px; }
 
 .headroom.headroom--pinned .content {
   background: rgba(0, 2, 34, 0.9);

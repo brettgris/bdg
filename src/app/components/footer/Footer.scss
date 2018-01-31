@@ -7,10 +7,11 @@ FOOTER
 ****************/
 
 /****** SIZES ******/
+$footer-vertical-padding: 20px;
+$footer-horizontal-padding: 20px;
 
 /****** COLORS ******/
 $footer-background: $black;
-$footer-color: $white;
 
 	/****************
 	LOGO
@@ -18,6 +19,29 @@ $footer-color: $white;
 
 	/****** SIZES ******/
 	$footer-logo-width: 50px;
+
+	/*****************
+	 CONTENT
+	*****************/
+
+	/*------SIZE-----*/
+	$footer-content-font-size: 13px;
+	$footer-content-font-weight: 100;
+	$footer-content-line-height: 20px;
+
+	/*------COLOR-----*/
+	$footer-content-color: $white;
+	$footer-content-hover: $primary-color;
+
+	/*****************
+	 COPYRIGHT
+	*****************/
+
+	/*------COLOR-----*/
+	$footer-copyright-color: $dark-grey;
+
+	/*------FONT-----*/
+	$footer-copyright-font-size: 14px;
 
 	/****************
 	GRADIENT
@@ -34,22 +58,36 @@ $footer-color: $white;
 
 	.content{
 		color: $footer-color;
-		padding-top: 15px;
+		padding-top: $footer-vertical-padding;
 
 		.logo{
 			width: $footer-logo-width;
+			display: inline-block;
+			margin-right: $footer-horizontal-padding;
 		}
 
 		.info{
 			a{
-				color: $footer-color;
+				color: $footer-content-color;
+				font-weight: $footer-content-font-weight;
+				font-size: $footer-content-font-size;
+				line-height: $footer-content-line-height;
 				text-decoration: none;
+				transition: color $transition-speed $transition-ease;
+				display: block;
+
+				&:hover{
+					color: $footer-content-hover;
+				}
 			}
 		}
 	}
 
 	.copyright{
-		padding-bottom: 15px;
+		color: $footer-copyright-color;
+		font-size: $footer-copyright-font-size;
+		margin-top: $footer-vertical-padding*3;
+		margin-bottom: $footer-vertical-padding;
 	}
 
 	.gradient{

@@ -17,7 +17,6 @@ $header-background-pinned: rgba( $black, $background-transparency );
 
 	/****** SIZES ******/
 	$header-logo-width: 70px;
-	$header-logo-margin-left: 15px;
 
 .header{
 	.content{
@@ -26,7 +25,6 @@ $header-background-pinned: rgba( $black, $background-transparency );
 
 		.logo{
 			width: $header-logo-width;
-			margin-left: $header-logo-margin-left;
 		}
 	}
 }

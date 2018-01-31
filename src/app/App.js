@@ -13,10 +13,10 @@ class App extends Component {
 
   	render() {
    	return (
-	      <div className="App">
-				<Header />
-				{/* <Routes /> */}
-				<Footer />
+	      <div id="App" className="page">
+				{/* <Header /> */}
+				<Routes />
+				{/* <Footer /> */}
 	      </div>
     	);
   	}

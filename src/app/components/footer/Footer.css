@@ -30,6 +30,16 @@ FOOTER
 	LOGO
 	****************/
 /****** SIZES ******/
+/*****************
+	 CONTENT
+	*****************/
+/*------SIZE-----*/
+/*------COLOR-----*/
+/*****************
+	 COPYRIGHT
+	*****************/
+/*------COLOR-----*/
+/*------FONT-----*/
 /****************
 	GRADIENT
 	****************/
@@ -39,14 +49,28 @@ FOOTER
   background: #000222; }
   .footer .content {
     color: #ffffff;
-    padding-top: 15px; }
+    padding-top: 20px; }
     .footer .content .logo {
-      width: 50px; }
+      width: 50px;
+      display: inline-block;
+      margin-right: 15px; }
     .footer .content .info a {
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 100;
+      font-size: 13px;
+      line-height: 20px;
+      text-decoration: none;
+      transition: color 0.4s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+      display: block; }
+      .footer .content .info a:hover {
+        color: #ff234a; }
   .footer .copyright {
-    padding-bottom: 15px; }
+    color: #505267;
+    font-size: 14px;
+    margin-top: 60px;
+    margin-bottom: 20px; }
   .footer .gradient {
     height: 6px;
     background: #ff234a;
