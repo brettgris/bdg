@@ -1,0 +1,42 @@
+.svg-color {
+  cursor: pointer;
+  fill: #000222;
+  transition: fill 0.4s cubic-bezier(0.2, 0.3, 0.25, 0.9); }
+  .svg-color:hover {
+    fill: #ff234a; }
+  .svg-color.whitetoblack {
+    fill: #ffffff; }
+    .svg-color.whitetoblack:hover {
+      fill: #000222; }
+  .svg-color.whitetocolor {
+    fill: #ffffff; }
+    .svg-color.whitetocolor:hover {
+      fill: #ff234a; }
+  .svg-color.blacktowhite {
+    fill: #000222; }
+    .svg-color.blacktowhite:hover {
+      fill: #ffffff; }
+  .svg-color.blacktocolor {
+    fill: #000222; }
+    .svg-color.blacktocolor:hover {
+      fill: #ff234a; }
+
+/****************
+HEADER
+****************/
+/****** SIZES ******/
+/****** COLORS ******/
+/****************
+	LOGO
+	****************/
+/****** SIZES ******/
+.header .content {
+  background: transparent;
+  height: 100px; }
+  .header .content .logo {
+    width: 70px;
+    margin-left: 15px; }
+
+.headroom.headroom--pinned .content {
+  background: rgba(0, 2, 34, 0.9);
+  transition: all 0.4s cubic-bezier(0.2, 0.3, 0.25, 0.9); }

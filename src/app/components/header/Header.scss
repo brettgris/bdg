@@ -1,0 +1,41 @@
+@import 'app/styles/colors.scss';
+@import 'app/styles/transition.scss';
+
+/****************
+HEADER
+****************/
+
+/****** SIZES ******/
+$header-height: 100px;
+
+/****** COLORS ******/
+$header-background-pinned: rgba( $black, $background-transparency );
+
+	/****************
+	LOGO
+	****************/
+
+	/****** SIZES ******/
+	$header-logo-width: 70px;
+	$header-logo-margin-left: 15px;
+
+.header{
+	.content{
+		background: transparent;
+		height: $header-height;
+
+		.logo{
+			width: $header-logo-width;
+			margin-left: $header-logo-margin-left;
+		}
+	}
+}
+
+.headroom{
+	&.headroom--pinned{
+		.content{
+			background: $header-background-pinned;
+			transition: all $transition-speed $transition-ease;
+		}
+	}
+}

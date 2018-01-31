@@ -1,0 +1,59 @@
+@import 'app/styles/colors.scss';
+@import 'app/styles/transition.scss';
+@import 'app/styles/mixins.scss';
+
+/****************
+FOOTER
+****************/
+
+/****** SIZES ******/
+
+/****** COLORS ******/
+$footer-background: $black;
+$footer-color: $white;
+
+	/****************
+	LOGO
+	****************/
+
+	/****** SIZES ******/
+	$footer-logo-width: 50px;
+
+	/****************
+	GRADIENT
+	****************/
+
+	/****** SIZES ******/
+	$footer-gradient-height: 6px;
+
+	/****** COLORS ******/
+	//in .gradient
+
+.footer{
+	background: $footer-background;
+
+	.content{
+		color: $footer-color;
+		padding-top: 15px;
+
+		.logo{
+			width: $footer-logo-width;
+		}
+
+		.info{
+			a{
+				color: $footer-color;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.copyright{
+		padding-bottom: 15px;
+	}
+
+	.gradient{
+		height: $footer-gradient-height;
+		@include linear-gradient(to right, $primary-color 0%, $secondary-color 50%, $third-color 100%);
+	}
+}
